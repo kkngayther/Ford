@@ -1,0 +1,43 @@
+$color-blue-0: #37a9e8;
+$color-blue-1: #0276b3;
+$color-blue-2: rgba(6,120,188,0.75);
+$color-blue-3: #102b4e;
+$color-blue-4: #092A46;
+$color-blue-5: #102B4E;
+$color-gray-0: #333;
+$color-gray-1: #9d9d9d;
+$color-orange-0: rgb(217, 46, 20);
+$color-black-0: #242424;
+$color-fb: #3C5B99;
+$color-tw: #1DA2F3;
+$color-yt: #FF0100;
+$color-ig: #DC2C75;
+
+$fs-0: 14px;
+$fs-1: 12px;
+$fs-2: 42px;
+$fs-3: 16px;
+$fs-4: 1.6rem;
+$fs-5: 2.75rem;
+$fs-6: 24px;
+$fs-7: 1.4rem;
+
+$fw-0: 300;
+$fw-1: 400;
+$fw-2: 700;
+
+$mg-0: 5px;
+$mg-1: 10px;
+$mg-2: 20px;
+
+$pd-0: 5px;
+$pd-1: 15px;
+$pd-1: 40px;
+$pd-2: 95px;
+
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)
