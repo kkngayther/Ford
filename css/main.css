@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #242424;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header__content .header__left .navbar-brand img {
+  width: 110px;
+}
+
+.header__content .header__left .navbar-nav .nav-item .nav-link {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 10px;
+}
+
+.header__content .header__left .navbar-nav .nav-item:hover .nav-link {
+  color: #102b4e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+  .header__content .header__right .navbar-nav .header-icon {
+    display: block;
+  }
+  .header__content .header__right .navbar-nav .header-acc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__content .header__right .navbar-nav .header-acc {
+    display: block;
+  }
+  .header__content .header__right .navbar-nav .header-icon {
+    display: none;
+  }
+}
+
+.header__content .header__right .nav-item i {
+  margin-right: 5px;
+}
+
+.header__content .header__right .nav-item .nav-link {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 10px;
+}
+
+.header__content .header__right .nav-item:hover .nav-link {
+  color: #102b4e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

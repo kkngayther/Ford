@@ -1,0 +1,33 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleHoverText($color) {
+    color: $color;
+}
+@mixin styleButton($bg-color, $border-color, $border-radius, $py, $px){
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: $py $px;
+}
+@mixin styleHoverButton($bg-color, $border-color, $color){
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $color;
+}
+@mixin responsive($screen){
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //Ten man hinh hop le 
+        // lay gia tri man hinh theo ten
+        $value:map-get($map:$breakpoints, $key:$screen);
+        @media screen and (min-width:$value){
+            @content;
+        }
+    }
+    @else{
+        // Ten man hinh sai
+        @warn "ten man hinh khong hop le";
+    }
+}

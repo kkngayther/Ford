@@ -1,0 +1,75 @@
+header{
+    @include styleText($color-blue-1, $fs-0, $fw-1);
+    // @include responsive ('small'){
+    //     padding-left: $pd-2 - 30;
+    //     padding-right: $pd-2 - 30;
+    // }
+    // @include responsive ('medium'){
+    //     padding-left: $pd-2 - 20;
+    //     padding-right: $pd-2 - 20;
+    // }
+    // @include responsive ('large'){
+    //     padding-left: $pd-2 - 15;
+    //     padding-right: $pd-2 - 15;
+    // }
+}
+.header__content{
+    .header__left{
+        .navbar-brand{
+            img{
+                width: 110px;
+            }          
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    @include styleText($color-blue-1, $fs-0, $fw-1);
+                    padding: $pd-1 + 5 $pd-0 + 5;
+                }
+                &:hover{
+                    .nav-link{
+                        @include styleText($color-blue-3, $fs-0, $fw-1);
+                    }                  
+                }
+            }
+        }
+    }
+    .header__right{
+        .navbar-nav{
+            @include responsive ('large'){
+                .header-icon{
+                    display: block;
+                }
+                .header-acc{
+                    display: none;
+                }
+            }
+            @include responsive ('extra-large'){
+                .header-acc{
+                    display: block;
+                }
+                .header-icon{
+                    display: none;
+                }
+            }
+        }
+        .nav-item{
+            i{
+                margin-right: $mg-0;
+            }
+            .nav-link{
+                @include styleText($color-blue-1, $fs-0, $fw-1);
+                padding: $pd-1 + 5 $pd-0 + 5;
+            }
+            &:hover{
+                .nav-link{
+                    @include styleText($color-blue-3, $fs-0, $fw-1);
+                }                  
+            }
+        }
+    }
+    @include responsive ('extra-large'){
+        padding-left: $pd-2;
+        padding-right: $pd-2;
+    }
+}
