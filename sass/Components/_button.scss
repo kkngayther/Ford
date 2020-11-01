@@ -1,0 +1,32 @@
+.btn-carousel{
+    @include styleButton($color-blue-1, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 60);
+    @include styleText($color-white, $fs-3, $fw-1);
+    &:hover{
+        @include styleButton($color-white, $color-white, 0, $pd-1 - 5, $pd-1 + 60);
+        @include styleText($color-blue-3, $fs-3, $fw-1)
+    }
+}
+.btn{
+    @include styleButton($color-blue-1, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 60);
+    @include styleText($color-white, $fs-3, $fw-1);
+    &:hover{
+        @include styleButton($color-white, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 60);
+        @include styleText($color-blue-3, $fs-3, $fw-1)
+    }
+}
+.btn-recall{
+    @include styleButton($color-orange-0, $color-orange-0, 0, $pd-1 - 5, $pd-1 + 60);
+    @include styleText($color-white, $fs-3, $fw-1);
+    &:hover{
+        @include styleButton($color-white, $color-orange-0, 0, $pd-1 - 5, $pd-1 + 60);
+        @include styleText($color-orange-0, $fs-3, $fw-1)
+    }
+}
+.btn-search{
+    @include styleButton($color-blue-1, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 10);
+    @include styleText($color-white, $fs-3, $fw-1);
+    &:hover{
+        @include styleButton($color-white, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 10);
+        @include styleText($color-blue-3, $fs-3, $fw-1)
+    }
+}

@@ -1,0 +1,43 @@
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 55px;
+    height: 60px;
+    border: 1px solid rgba(85,85,85,0.8)!important;
+    background-color: rgba(85,85,85,0.8)!important;
+    border-radius: 0px!important;
+    margin: 0!important;
+    span{
+        @include styleText($color-white, $fs-2 + 40, $fw-0);
+        line-height: 45px;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: white!important;
+        border-color: $color-green!important;
+        border-left-color: transparent!important;
+        span{
+            color: $color-green;
+        }
+        //@include styleHoverButton($color-white, $color-green, $color-green);
+    }
+}
+.owl-next{
+    left: unset;
+    right: 0;
+    &:hover{
+        border-color: $color-green!important;
+        border-right-color: transparent!important;
+    }
+}
+.owl-dot{
+    //position: absolute;
+    //bottom: 20px;
+    &:active{
+        border-color: $color-white!important;
+        background-color: transparent!important;
+    }
+}

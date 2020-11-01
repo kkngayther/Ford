@@ -9,98 +9,443 @@
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
         <div class="container-fluid">
             <div class="header__content">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">SUVS & CROSSOVERS <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">TRUCKS & VANS <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">ELICTRIFIED <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">CARS <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">ALL VEHICLES <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-0">
+                            <li class="nav-item active header-icon">
+                                <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+                            </li>
+                            <li class="nav-item active header-acc">
+                                <a class="nav-link" href="#"><i class="fa fa-user"></i>MY ACCOUNT <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">FINANCE <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">SUPPORT <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">EN <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="carouselFord">
+        <div class="container-fluid">
+            <div class="carousel__content owl-carousel owl-theme">
+                <div class="carousel__item first">
+                    <img src="./img/carousel3.jpeg" alt="">
+                    <div class="carousel__caption first">
+                        <h5>Build Your Bronco Now!</h5>
+                        <button class="btn-carousel">Build & Price</button>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <img src="./img/carousel1.jpeg" alt="">
+                    <div class="carousel__caption second">
+                        <!-- <h5>Build Your Bronco Now!</h5> -->
+                        <button class="btn-carousel">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="produce">
+        <div class="container-fluid">
+            <div class="produce__content">
+                <div class="produce__top">
+                    <h2>Something for Everyone</h2>
+                    <p>See our full lineup of vehicles and find the one that best fits you.</p>
+                    <button class="btn">All Vehicles</button>
+                </div>
+                <div class="produce__image">
+                    <img src="./img/vehicle.jpeg" alt="">
+                </div>
+                <div class="produce__bottom">
+                    <img src="./img/deal.jpeg" alt="">
+                    <div class="text">
+                        <a href="">
+                            <h3>Let Us Sweeten the Deal</h3>
+                            <p>SEE ALL OFFERS ></p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container-fluid">
+            <div class="services__content">
                 <div class="row">
-                    <div class="col-lg-9 col-xl-8">
-                        <div class="header__left">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <a class="navbar-brand" href="#">
-                                    <img src="./img/logo.png" alt="">
-                                </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">SUVS & CROSSOVERS <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">TRUCKS & VANS <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">ELICTRIFIED <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">CARS <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">ALL VEHICLES <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
+                    <div class="services__text col-9 d-flex">
+                        <div class="detail">
+                            <h3>What's Happening at Ford</h3>
+                            <p>The latest technology, news and vehicles.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-xl-4">
-                        <div class="header__right">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item active header-icon">
-                                            <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
-                                        </li>
-                                        <li class="nav-item active header-acc">
-                                            <a class="nav-link" href="#"><i class="fa fa-user"></i>MY ACCOUNT <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">FINANCE <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">SUPPORT <span
-                                                    class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">EN <span class="sr-only">(current)</span></a>
-                                        </li>
-                                    </ul>
+                    <div class="services__item col-3">
+                        <a href="">
+                            <img src="./img/bronco.jpeg" alt="">
+                            <div class="link d-flex">
+                                <div class="title">
+                                    <span>Build Your Bronco Now!</span>
                                 </div>
-                            </nav>
+                                <div class="icon">
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__item col-6">
+                        <a href="">
+                            <img src="./img/realtalk.jpeg" alt="">
+                            <div class="link realtalk d-flex">
+                                <div class="title rt-title">
+                                    <span>Real Talk. Real Inspiration. Watch Now.</span>
+                                </div>
+                                <div class="icon rt-icon">
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__card col-6 row">
+                        <div class="services__item col-6">
+                            <a href="">
+                                <img src="./img/f150.jpeg" alt="">
+                                <div class="link d-flex">
+                                    <div class="title">
+                                        <span>Watch the Ford F-150 get Torture Tested</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services__item col-6">
+                            <a href="">
+                                <img src="./img/card.jpeg" alt="">
+                                <div class="link d-flex">
+                                    <div class="title">
+                                        <span>FordPass Rewards Visa Card</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services__item col-6">
+                            <a href="">
+                                <img src="./img/leadership.jpeg" alt="">
+                                <div class="link d-flex">
+                                    <div class="title">
+                                        <span>Leadership Message</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services__item col-6">
+                            <a href="">
+                                <img src="./img/assistance.jpeg" alt="">
+                                <div class="link d-flex">
+                                    <div class="title">
+                                        <span>COVID-19 Assistance</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <section class="carouselFord"></section>
-    <section class="produce"></section>
-    <section class="services"></section>
-    <section class="recall"></section>
-    <section class="search"></section>
-    <section class="menu"></section>
-    <section class="contact"></section>
-    <footer></footer>
+    </section>
+    <section class="recall">
+        <div class="container-fluid">
+            <div class="recall__content">
+                <div class="recall__top d-flex">
+                    <div class="detail">
+                        <h2>Airbag Recalls</h2>
+                        <button class="btn-recall">Learn More</button>
+                    </div>
+                </div>
+                <div class="recall__bottom">
+                    <a href="">DISCLOSURES<i class="fa fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search">
+        <div class="container-fluid">
+            <div class="search__content">
+                <div class="search__top d-flex">
+                    <div class="detail">
+                        <h2>California Residents</h2>
+                        <p><span>Exercise your rights under the California Consumer Privacy Act </span><a
+                                href="">here</a></p>
+                        <button class="btn-search">Do Not Sell My Personal Information</button>
+                    </div>
+                </div>
+                <div class="search__bottom d-flex">
+                    <div class="form-group d-flex">
+                        <span><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="Search">
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><span>Popular</span></li>
+                            <li><a href="">Electric Vehicles</a></li>
+                            <li><a href="">Ranger</a></li>
+                            <li><a href="">Explorer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container-fluid">
+            <div class="menu__content d-flex">
+
+                <div class="menu__item">
+                    <p>All Vehicles</p>
+                    <ul>
+                        <li><a href="">SUVs & Crossovers</a></li>
+                        <li><a href="">Trucks & Vans</a></li>
+                        <li><a href="">Cars</a></li>
+                        <li><a href="">Electrics</a></li>
+                        <li><a href="">Commercial Vehicles</a></li>
+                        <li><a href="">Future Vehicles</a></li>
+                        <li><a href="">Certified Pre-Owned</a></li>
+                        <li><a href="">Fleet Vehicles</a></li>
+                        <li><a href="">All Vehicles</a></li>
+                        <li><a href="">Performance Vehicles</a></li>
+                    </ul>
+                </div>
+                <div class="menu__item">
+                    <p>Shopping Tools</p>
+                    <ul>
+                        <li><a href="">Build & Price</a></li>
+                        <li><a href="">Search Inventory</a></li>
+                        <li><a href="">Get a Quote</a></li>
+                        <li><a href="">Pricing & Incentives</a></li>
+                        <li><a href="">Trade-In Value</a></li>
+                        <li><a href="">Get a Brochure</a></li>
+                        <li><a href="">Compare Vehicles</a></li>
+                        <li><a href="">Get Updates</a></li>
+                    </ul>
+                </div>
+                <div class="menu__item">
+                    <p>Finance</p>
+                    <ul>
+                        <li><a href="">Why Ford Credit</a></li>
+                        <li><a href="">Finance Options</a></li>
+                        <li><a href="">Payment Calculator</a></li>
+                        <li><a href="">Credir Education</a></li>
+                        <li><a href="">Customer Support</a></li>
+                        <li><a href="">Apply Online</a></li>
+                        <li><a href="">Ford Credit Account</a></li>
+                        <li><a href="">Ford Insure</a></li>
+                        <li><a href="">Ford Interest Advantage</a></li>
+                        <li><a href="">Investor Center</a></li>
+                        <li><a href="">Ford Credit Careers</a></li>
+                    </ul>
+                </div>
+                <div class="menu__item">
+                    <p>Owner</p>
+                    <ul>
+                        <li><a href="">Owner Home</a></li>
+                        <li><a href="">Schedule Service</a></li>
+                        <li><a href="">Your Warranty</a></li>
+                        <li><a href="">Service Coupons & Offers</a></li>
+                        <li><a href="">Redeem & Rebate</a></li>
+                        <li><a href="">SYNC & Technology</a></li>
+                        <li><a href="">SYNC Software Updates</a></li>
+                        <li><a href="">Owner Manuals</a></li>
+                        <li><a href="">Locate a Dealer</a></li>
+                        <li><a href="">Ford Parts</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Roadside Assistance</a></li>
+                        <li><a href="">Ford Protect</a></li>
+                        <li><a href="">Safety Recalls</a></li>
+                        <li><a href="">Airbag Recalls</a></li>
+                        <li><a href="">Ask Ford</a></li>
+                    </ul>
+                </div>
+                <div class="menu__item">
+                    <p>Experience Ford</p>
+                    <ul>
+                        <li><a href="">Corporate</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Investors</a></li>
+                        <li><a href="">Company News</a></li>
+                        <li><a href="">About Ford</a></li>
+                        <li><a href="">Racing</a></li>
+                        <li><a href="">Accessories Store</a></li>
+                        <li><a href="">Warriors in Pink</a></li>
+                        <li><a href="">Ford Merchandise</a></li>
+                        <li><a href="">Ford Motor Company Fund</a></li>
+                        <li><a href="">SYNC</a></li>
+                        <li><a href="">Ford Pass</a></li>
+                        <li><a href="">Ford Co-Pilot360 Technology</a></li>
+                        <li><a href="">Ford Telematics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container-fluid">
+            <div class="contact__content d-flex">
+                <div class="left">
+                    <nav class="navbar navbar-expand navbar-light">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="fa fa-envelope"></i><span>Get Updates</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i
+                                        class="fas fa-comment-alt fa-flip-horizontal"></i><span>Share your thoughts
+                                        about Ford.com</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <nav class="navbar navbar-expand navbar-light">
+                        <span>Follow Ford</span>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="fb fab fa-facebook-square"></i><span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="tw fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="yt fab fa-youtube"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="ig fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="footer__content">
+                <div class="detail">
+                    <a href="">
+                        <div class="language d-flex">
+                            <div class="icon">
+                                <i class="fa fa-globe-americas"></i>
+                            </div>
+                            <div class="text">
+                                Change languages
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="copyright">
+                        © 2020 Ford Motor Company
+                    </a>
+                    <nav class="navbar navbar-expand navbar-light">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Site Map<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Glossary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Site Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Accessibility</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cookie Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Your CA Privacy Rights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">AdChoices</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="#">Third-Party Trademarks</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -113,6 +458,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

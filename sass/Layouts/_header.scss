@@ -1,62 +1,16 @@
 header{
     @include styleText($color-blue-1, $fs-0, $fw-1);
-    // @include responsive ('small'){
-    //     padding-left: $pd-2 - 30;
-    //     padding-right: $pd-2 - 30;
-    // }
-    // @include responsive ('medium'){
-    //     padding-left: $pd-2 - 20;
-    //     padding-right: $pd-2 - 20;
-    // }
-    // @include responsive ('large'){
-    //     padding-left: $pd-2 - 15;
-    //     padding-right: $pd-2 - 15;
-    // }
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .header__content{
-    .header__left{
-        .navbar-brand{
-            img{
-                width: 110px;
-            }          
-        }
-        .navbar-nav{
-            .nav-item{
-                .nav-link{
-                    @include styleText($color-blue-1, $fs-0, $fw-1);
-                    padding: $pd-1 + 5 $pd-0 + 5;
-                }
-                &:hover{
-                    .nav-link{
-                        @include styleText($color-blue-3, $fs-0, $fw-1);
-                    }                  
-                }
-            }
-        }
+    .navbar-brand{
+        img{
+            width: 110px;
+        }          
     }
-    .header__right{
-        .navbar-nav{
-            @include responsive ('large'){
-                .header-icon{
-                    display: block;
-                }
-                .header-acc{
-                    display: none;
-                }
-            }
-            @include responsive ('extra-large'){
-                .header-acc{
-                    display: block;
-                }
-                .header-icon{
-                    display: none;
-                }
-            }
-        }
+    .navbar-nav{
         .nav-item{
-            i{
-                margin-right: $mg-0;
-            }
             .nav-link{
                 @include styleText($color-blue-1, $fs-0, $fw-1);
                 padding: $pd-1 + 5 $pd-0 + 5;
@@ -66,6 +20,40 @@ header{
                     @include styleText($color-blue-3, $fs-0, $fw-1);
                 }                  
             }
+        }
+    }
+    #navbarNav{
+        justify-content: space-between;
+    }
+    @include responsive ('large'){
+        .header-icon{
+            display: block;
+        }
+        .header-acc{
+            display: none;
+        }
+    }
+    @include responsive ('extra-large'){
+        .header-acc{
+            display: block;
+        }
+        .header-icon{
+            display: none;
+        }
+    }
+
+    .nav-item{
+        i{
+            margin-right: $mg-0;
+        }
+        .nav-link{
+            @include styleText($color-blue-1, $fs-0, $fw-1);
+            padding: $pd-1 + 5 $pd-0 + 5;
+        }
+        &:hover{
+            .nav-link{
+                @include styleText($color-blue-3, $fs-0, $fw-1);
+            }                  
         }
     }
     @include responsive ('extra-large'){

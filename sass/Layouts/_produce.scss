@@ -1,0 +1,42 @@
+.produce__content{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    .produce__top{
+        h2{
+            @include styleText($color-black-0, $fs-2, $fw-1);
+        }
+        p{
+            @include styleText($color-black-0, $fs-3, $fw-0);
+            margin-bottom: $mg-2 + 20px;
+        }
+    }
+    .produce__image{
+        img{
+            width: 100%;
+        }
+    }
+    .produce__bottom{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            a{
+                text-decoration: none;
+            }
+            h3{
+                @include styleText($color-white, $fs-2, $fw-1);
+                padding-top: 30px;
+            }
+            p{
+                @include styleText($color-white, $fs-3, $fw-0);
+                padding-top: 50px;
+            }
+        }
+    }
+}

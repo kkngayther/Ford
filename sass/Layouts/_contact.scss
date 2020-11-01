@@ -1,0 +1,53 @@
+.contact__content {
+    background-color: $color-blue-3;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    .left {
+        i {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $color-blue-0;
+            text-align: center;
+            line-height: 40px;
+            font-size: $fs-3;
+            color: $color-white;
+            margin-right: 20px;
+        }
+        span {
+            @include styleText($color-blue-0, $fs-3 + 2, $fw-0);
+            padding-right: 50px;
+        }
+    }
+    .right {
+        .navbar {
+            span{
+                @include styleText($color-white, $fs-0, $fw-0);
+                margin-right: 30px;
+            }
+            i {
+                font-size: $fs-3 + 2;
+                color: $color-white;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+            }
+            .fb{
+                background-color: $color-fb;
+            }
+            .tw{
+                background-color: $color-tw;
+            }
+            .yt{
+                background-color: $color-yt;
+            }
+            .ig{
+                background-color: $color-ig;
+            }
+        }
+    }
+}

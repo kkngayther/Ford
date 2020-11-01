@@ -1,0 +1,33 @@
+.recall__content{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    .recall__top{
+        background-color: $color-gray-2;
+        align-items: center;
+        justify-content: center;
+        h2{
+            @include styleText($color-orange-0, $fs-2, $fw-1);
+            padding-top: 30px;
+            margin-bottom: 40px;
+        }
+        button{
+            margin-bottom: 50px;
+        }
+    }
+    .recall__bottom{
+        padding: 30px 20px;
+        a{
+            text-decoration: none;
+            @include styleText($color-blue-0, $fs-3, $fw-0);
+        }
+        i{
+            margin-left: 10px;
+        }
+        &:hover{
+            a{
+                color: $color-blue-6;
+            }
+        }
+    }
+}
