@@ -1,3 +1,16 @@
+.header{
+    @include styleButton($color-white, $color-white, 0, 0, 0);
+    @include styleText($color-white, $fs-1, $fw-1);
+}
+.btn-subheader{
+    @include styleButton($color-blue-1, $color-blue-1, 50px, $pd-1 - 5, $pd-1 + 20);
+    @include styleText($color-white, $fs-1, $fw-1);
+    &:hover{
+        @include styleButton($color-white, $color-blue-3, 50px, $pd-1 - 5, $pd-1 + 20);
+        @include styleText($color-blue-3, $fs-1, $fw-1)
+    }
+}
+
 .btn-carousel{
     @include styleButton($color-blue-1, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 60);
     @include styleText($color-white, $fs-3, $fw-1);
@@ -21,6 +34,10 @@
         @include styleButton($color-white, $color-orange-0, 0, $pd-1 - 5, $pd-1 + 60);
         @include styleText($color-orange-0, $fs-3, $fw-1)
     }
+}
+.disclosures{
+    @include styleButton($color-white, $color-white, 0, 0, 0);
+    @include styleText($color-blue-0, $fs-3, $fw-0);
 }
 .btn-search{
     @include styleButton($color-blue-1, $color-blue-1, 0, $pd-1 - 5, $pd-1 + 10);

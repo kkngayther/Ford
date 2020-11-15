@@ -2,8 +2,15 @@ header{
     @include styleText($color-blue-1, $fs-0, $fw-1);
     max-width: 1440px;
     margin: 0 auto;
+    .container-fluid{
+        position: fixed;
+        background-color: white;
+        z-index: 10;
+        max-width: 1440px;
+    }
 }
 .header__content{
+    box-shadow: 0 8px 4px -4px rgba(0,0,0,0.2);
     .navbar-brand{
         img{
             width: 110px;
@@ -56,8 +63,8 @@ header{
             }                  
         }
     }
-    @include responsive ('extra-large'){
-        padding-left: $pd-2;
-        padding-right: $pd-2;
-    }
+    // @include responsive ('extra-large'){
+    //     padding-left: $pd-2;
+    //     padding-right: $pd-2;
+    // }
 }

@@ -1,0 +1,76 @@
+.subheader__content {
+    max-width: 1440px;
+    margin: 0 auto;
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .item {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+        .detail {
+            .name {
+                @include styleText($color-blue-5, $fs-0, $fw-2);
+                text-decoration: none;
+                padding-bottom: 7px;
+                &:hover {
+                    i {
+                        display: inline;
+                    }
+                }
+            }
+            i {
+                margin-left: 5px;
+                display: none;
+            }
+            .price {
+                @include styleText($color-black-0, $fs-0, $fw-0);
+                padding-bottom: 7px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .subheader__button {
+        .list__button {
+            padding: 15px 70px;
+        }
+        background-color: $color-gray-2;
+        button {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .suv_cross{
+        display: none;
+    }
+    .truck{
+        display: none;
+    }
+    .electrified{
+        display: none;
+    }
+    .car{
+        display: none;
+    }
+}
+.subheader{
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    top: 77px;
+}

@@ -41,5 +41,15 @@
                 }
             }
         }
+        @include responsive ('small'){
+            .navbar-nav{
+                flex-direction: column;
+            }
+        }
+        @include responsive ('medium'){
+            .navbar-nav{
+                flex-direction: row;
+            }
+        }
     }
 }

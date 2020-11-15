@@ -21,8 +21,12 @@
         padding: 20px 100px;
         background-color: $color-gray-0;
         .form-group{
+            display: none;
             align-items: center;
             margin: 0;
+            @include responsive ('medium'){
+                display: flex!important;
+            }
         }
         i{
             font-size: $fs-6;
